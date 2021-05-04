@@ -1,7 +1,7 @@
 {
   "name": "fine-time",
   "version": "0.1.0",
-  "homepage": "https://fac-73.github.io/fine-time",
+  "homepage": "https://fac-73.github.io/fine-time/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
