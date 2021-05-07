@@ -1,7 +1,7 @@
 # User Directory - React.js
 
 An employee directory built with React. This application's UI has been built using modular components. These components manage state, and respond to user events.
-<br />
+<br /><br />
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br />
 <br />
 
