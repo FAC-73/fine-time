@@ -5,7 +5,7 @@ Employee directory built with React
 An employee directory built with React. This application's UI has been built using modular components. These components manage state, and respond to user events.
 <br /><br />
 
-![Employee directory](https://github.com/FAC-73/fine-time/blob/main/Assets/App-screenshot.png?raw=true)
+![Employee directory](https://github.com/FAC-73/fine-time/blob/main/assets/AppDemo.png?raw=true)
 Launch application [Github pages Deployment](https://fac-73.github.io/fine-time/)
 <br />
 
