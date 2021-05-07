@@ -1,7 +1,7 @@
-# React User Directory
+# User Directory - React.js
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br />
 An employee directory built with React. This application's UI has been built using modular components. These components manage state, and respond to user events.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br />
 <br /><br />
 
 ![Employee directory](https://github.com/FAC-73/fine-time/blob/main/assets/AppDemo.png?raw=true)
