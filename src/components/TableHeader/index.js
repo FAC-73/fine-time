@@ -2,19 +2,19 @@ import React from "react";
 import "./style.css";
 import Card from '../Card';
 
-class ListHeader extends React.Component {
+class TableHeader extends React.Component {
 
     state = {
         alphabetical: true,
         ascending: true,
-        sortedEmployees: [],
+        sortList: [],
         employees: []
     }
 
     componentDidMount() {
-        if (this.state.sortedEmployees.length < 1) {
+        if (this.state.sortList.length < 1) {
             this.setState({
-                sortedEmployees: this.props.empList
+                sortList: this.props.empList
             })
         }
     }
@@ -22,7 +22,7 @@ class ListHeader extends React.Component {
     componentDidUpdate(prevProps) {
         if (this.props.empList !== prevProps.empList) {
             this.setState({
-                sortedEmployees: this.props.empList
+                sortList: this.props.empList
             })
         }
     }
@@ -50,7 +50,7 @@ class ListHeader extends React.Component {
         }
         this.setState({
             alphabetical: !this.state.alphabetical,
-            sortedEmployees: sortEmp
+            sortList: sortEmp
 
         })
     }
@@ -78,7 +78,7 @@ class ListHeader extends React.Component {
         }
         this.setState({
             ascending: !this.state.ascending,
-            sortedEmployees: sortEmp
+            sortList: sortEmp
 
         })
     }
@@ -97,8 +97,8 @@ class ListHeader extends React.Component {
                 </div>
 
                 {
-                    this.state.sortedEmployees.length > 0 &&
-                    this.state.sortedEmployees.map((item, index) => (
+                    this.state.sortList.length > 0 &&
+                    this.state.sortList.map((item, index) => (
 
                             <Card
                                 image={item.picture.large}
@@ -117,4 +117,4 @@ class ListHeader extends React.Component {
     }
 }
 
-export default ListHeader;
+export default TableHeader;

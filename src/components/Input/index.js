@@ -2,16 +2,16 @@ import React from "react";
 import "./style.css";
 import TableHeader from "../TableHeader";
 
-class Navbar extends React.Component {
+class Input extends React.Component {
   state = {
     searchTerm: "",
-    filteredEmployees: [],
+    refineEmployees: [],
   };
 
   componentDidMount() {
-    if (this.state.filteredEmployees.length < 1) {
+    if (this.state.refineEmployees.length < 1) {
       this.setState({
-        filteredEmployees: this.props.employees,
+        refineEmployees: this.props.employees,
       });
     }
   }
@@ -21,7 +21,7 @@ class Navbar extends React.Component {
       searchTerm: event.target.value,
     });
     let userTyped = event.target.value;
-    const filteredList = this.props.employees.filter((item) => {
+    const refineList = this.props.employees.filter((item) => {
       let values =
         item.name.title +
         item.name.first +
@@ -34,7 +34,7 @@ class Navbar extends React.Component {
     });
 
     this.setState({
-      filteredEmployees: filteredList,
+      refineEmployees: refineList,
     });
   };
 
@@ -51,12 +51,12 @@ class Navbar extends React.Component {
             placeholder="Search for employees in your company"
           />
         </form>
-        {this.state.filteredEmployees.length > 0 && (
-          <TableHeader empList={this.state.filteredEmployees} />
+        {this.state.refineEmployees.length > 0 && (
+          <TableHeader empList={this.state.refineEmployees} />
         )}
       </div>
     );
   }
 }
 
-export default Navbar;
+export default Input;
