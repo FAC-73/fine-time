@@ -1,5 +1,4 @@
-# fine-time
-Employee directory built with React
+# Employee directory built with React
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br />
 An employee directory built with React. This application's UI has been built using modular components. These components manage state, and respond to user events.
