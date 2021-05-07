@@ -1,0 +1,27 @@
+.card {
+    display: grid;
+    grid-template-columns: 12% 23% 12% 12% 18% 23%;
+    height: fit-content;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: normal;
+    background-color: #0000009a;
+    backdrop-filter: blur(12px);
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.103);
+}
+
+.avatar {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-left: 16px;
+}
+
+.link {
+    color: #00C2FF;
+    padding-right: 16px;
+}

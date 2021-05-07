@@ -1,0 +1,17 @@
+.title {
+    font-size: 28px;
+    font-weight: bolder;
+    letter-spacing: -2px;
+    color: #00C2FF;
+}
+
+.wrapper {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    vertical-align: middle;
+    flex-direction: column;
+    justify-content: center;
+}
